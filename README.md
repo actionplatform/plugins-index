@@ -25,5 +25,6 @@ Open a pull request with `plugins/<slug>.json`:
 - `needs` lists every host the plugin talks to and every environment variable it reads; the CLI shows it before installing.
 - `verified` is set by a reviewer after reading the code: no side effects at import, no monkey-patching of `action_platform.*`, `needs` complete. Leave it `false` in the pull request.
 - A new version is a pull request bumping `latest`.
+- Run `python scripts/build_index.py` after any change: `index.json` at the root aggregates every plugin and is what the hosted platform's marketplace reads; CI refuses a stale one.
 
 Rules for plugin authors: [writing a plugin](https://github.com/actionplatform/action-platform/blob/master/docs/contribute_plugins.md).

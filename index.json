@@ -1,0 +1,40 @@
+{
+  "plugins": [
+    {
+      "name": "aws-lambda",
+      "description": "Deploy to AWS Lambda with SAM; read CloudFormation stacks and functions",
+      "author": "actionplatform",
+      "verified": true,
+      "repo": "https://github.com/actionplatform/apx-aws-lambda",
+      "pypi": "apx-aws-lambda",
+      "latest": "0.1.0",
+      "min_core": "0.16",
+      "needs": [
+        "tool: aws (AWS CLI v2), sam (AWS SAM CLI)",
+        "env: AWS_PROFILE or AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY, AWS_REGION",
+        "net: *.amazonaws.com"
+      ],
+      "tags": [
+        "cloud",
+        "aws",
+        "lambda"
+      ]
+    },
+    {
+      "name": "example",
+      "description": "Template plugin: a tool, a command, an overlay, a release strategy, stricter git-flow",
+      "author": "actionplatform",
+      "verified": true,
+      "repo": "https://github.com/actionplatform/apx-example",
+      "pypi": "apx-example",
+      "latest": "0.1.0",
+      "min_core": "0.16",
+      "needs": [
+        "nothing outside this machine"
+      ],
+      "tags": [
+        "template"
+      ]
+    }
+  ]
+}
