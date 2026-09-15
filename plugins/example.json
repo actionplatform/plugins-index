@@ -1,0 +1,12 @@
+{
+  "name": "example",
+  "description": "Template plugin: a tool, a command, an overlay, a release strategy, stricter git-flow",
+  "author": "actionplatform",
+  "verified": true,
+  "repo": "https://github.com/actionplatform/action-platform-plugin",
+  "pypi": "action-platform-plugin-example",
+  "latest": "0.1.0",
+  "min_core": "0.16",
+  "needs": ["nothing outside this machine"],
+  "tags": ["template"]
+}
