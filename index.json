@@ -22,13 +22,13 @@
     },
     {
       "name": "example",
-      "description": "Template plugin: a tool, a command, an overlay, a release strategy, stricter git-flow",
+      "description": "Template plugin: a tool, a command, a deploy target with readiness, an overlay, a release strategy, stricter git-flow",
       "author": "actionplatform",
       "verified": true,
       "repo": "https://github.com/actionplatform/apx-example",
       "pypi": "apx-example",
-      "latest": "0.1.0",
-      "min_core": "0.16",
+      "latest": "0.2.0",
+      "min_core": "0.26",
       "needs": [
         "nothing outside this machine"
       ],
