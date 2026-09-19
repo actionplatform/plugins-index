@@ -1,14 +1,14 @@
 {
   "name": "aws-lambda",
-  "description": "Deploy to AWS Lambda with SAM, with a deploy proxy in your account for credentials without keys; read CloudFormation stacks and functions",
+  "description": "Deploy to AWS Lambda with SAM behind the Lambda Web Adapter — one overlay for every language, built by ap-build; a deploy proxy in your account for credentials without keys; readiness checks before a deploy; CloudFormation stacks and functions as tools",
   "author": "actionplatform",
   "verified": true,
   "repo": "https://github.com/actionplatform/apx-aws-lambda",
   "pypi": "apx-aws-lambda",
-  "latest": "0.3.3",
-  "min_core": "0.17",
+  "latest": "0.5.0",
+  "min_core": "0.26",
   "needs": [
-    "tool: aws, sam (bundled as Python packages when not on PATH)",
+    "tool: aws, sam (bundled as Python packages when not on PATH), ap-build (on the platform's worker and in the build images)",
     "env: AWS_REGION; credentials from proxy_url (the deploy proxy in your account, no keys), role_arn (OIDC, no keys) or the AWS CLI chain (SSO, profile, instance role)",
     "net: *.amazonaws.com, the proxy url when set"
   ],
