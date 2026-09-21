@@ -21,6 +21,25 @@
       ]
     },
     {
+      "name": "dokploy",
+      "description": "Deploy to Dokploy: the CI publishes a Docker image on every release and the platform points the Dokploy application at that tag \u2014 one overlay for every language on the images-base build and runtime images; readiness checks (settings, image published, key accepted, application state); projects, applications and deployments as tools",
+      "author": "actionplatform",
+      "verified": false,
+      "repo": "https://github.com/actionplatform/apx-dokploy",
+      "pypi": "apx-dokploy",
+      "latest": "0.1.0",
+      "min_core": "0.28.1",
+      "needs": [
+        "env: DOKPLOY_URL, DOKPLOY_API_KEY on a machine (the plugin's url and api_key options on the platform); AP_DOKPLOY_REGISTRY_USERNAME and AP_DOKPLOY_REGISTRY_PASSWORD for a private image",
+        "net: the Dokploy instance's url; the image registry (ghcr.io by default)"
+      ],
+      "tags": [
+        "cloud",
+        "dokploy",
+        "docker"
+      ]
+    },
+    {
       "name": "example",
       "description": "Template plugin: a tool, a command, a deploy target with readiness, an overlay, a release strategy, stricter git-flow",
       "author": "actionplatform",
