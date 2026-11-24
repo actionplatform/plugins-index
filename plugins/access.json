@@ -5,7 +5,7 @@
   "verified": false,
   "repo": "https://github.com/actionplatform/apx-access",
   "pypi": "apx-access",
-  "latest": "0.1.1",
+  "latest": "0.1.2",
   "min_core": "0.32",
   "needs": [
     "net: the Action Platform the CLI is logged in to (members, teams, the mapping kept as the organization's plugin options)",
