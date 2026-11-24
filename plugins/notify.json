@@ -1,0 +1,21 @@
+{
+  "name": "notify",
+  "description": "Post an organization's events to Slack, Discord, Microsoft Teams or an HMAC-signed webhook: a release cut, a deploy that succeeded or failed (any executor, Jenkins and GitHub Actions included), readiness blocking a release, CI failing on a release tag; filters per event kind and project, deliveries visible to admins",
+  "author": "actionplatform",
+  "verified": false,
+  "repo": "https://github.com/actionplatform/apx-notify",
+  "pypi": "apx-notify",
+  "latest": "0.1.0",
+  "min_core": "0.34",
+  "needs": [
+    "net: the webhook URLs the organization sets (hooks.slack.com, discord.com, the Teams workflow's host, its own endpoint); public addresses only",
+    "env: APX_NOTIFY_ALLOW_PRIVATE=1 on the worker lets a webhook reach a private or loopback address (self-hosted platforms)"
+  ],
+  "tags": [
+    "notification",
+    "slack",
+    "discord",
+    "teams",
+    "webhook"
+  ]
+}
