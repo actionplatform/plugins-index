@@ -1,15 +1,16 @@
 {
   "name": "sentry",
-  "description": "Manage who belongs to a Sentry organization and its teams; read a release's new issues and the errors after a deploy",
+  "description": "Manage who belongs to a Sentry organization and its teams through Connect Sentry, no pasted token; read a release's new issues and the errors after a deploy",
   "author": "actionplatform",
   "verified": false,
   "repo": "https://github.com/actionplatform/apx-sentry",
   "pypi": "apx-sentry",
-  "latest": "0.1.0",
+  "latest": "0.2.0",
   "min_core": "0.33",
   "needs": [
     "env: AP_SENTRY_ORG, AP_SENTRY_TOKEN, AP_SENTRY_URL on a machine (the plugin's options on the platform)",
-    "net: sentry.io, or the self-hosted Sentry's url"
+    "net: sentry.io, or the self-hosted Sentry's url",
+    "connection: the organization's Sentry connection on a hosted platform (core 0.34)"
   ],
   "tags": [
     "access",
