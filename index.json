@@ -55,6 +55,64 @@
       "tags": [
         "template"
       ]
+    },
+    {
+      "name": "github",
+      "description": "Access to a GitHub organization (members, teams, repository permissions) and read-only checks of branch protection and repository settings",
+      "author": "actionplatform",
+      "verified": false,
+      "repo": "https://github.com/actionplatform/apx-github",
+      "pypi": "apx-github",
+      "latest": "0.1.0",
+      "min_core": "0.33",
+      "needs": [
+        "net: api.github.com (or the api_url option on GitHub Enterprise Server)",
+        "env: AP_GITHUB_ORG, AP_GITHUB_TOKEN, AP_GITHUB_API_URL (or the same keys in the plugin's options)"
+      ],
+      "tags": [
+        "access",
+        "github",
+        "scm"
+      ]
+    },
+    {
+      "name": "jenkins",
+      "description": "Jenkins: access through Role-based Authorization Strategy, and read-only tools for jobs, builds and the queue",
+      "author": "actionplatform",
+      "verified": false,
+      "repo": "https://github.com/actionplatform/apx-jenkins",
+      "pypi": "apx-jenkins",
+      "latest": "0.1.0",
+      "min_core": "0.33",
+      "needs": [
+        "net: the host of the url option",
+        "env: AP_JENKINS_URL, AP_JENKINS_USER, AP_JENKINS_TOKEN (tools on a machine; the plugin's options are the fallback)",
+        "jenkins: the role-strategy plugin selected as the authorization strategy (access)"
+      ],
+      "tags": [
+        "access",
+        "ci",
+        "jenkins"
+      ]
+    },
+    {
+      "name": "sentry",
+      "description": "Manage who belongs to a Sentry organization and its teams; read a release's new issues and the errors after a deploy",
+      "author": "actionplatform",
+      "verified": false,
+      "repo": "https://github.com/actionplatform/apx-sentry",
+      "pypi": "apx-sentry",
+      "latest": "0.1.0",
+      "min_core": "0.33",
+      "needs": [
+        "env: AP_SENTRY_ORG, AP_SENTRY_TOKEN, AP_SENTRY_URL on a machine (the plugin's options on the platform)",
+        "net: sentry.io, or the self-hosted Sentry's url"
+      ],
+      "tags": [
+        "access",
+        "observability",
+        "sentry"
+      ]
     }
   ]
 }
