@@ -1,0 +1,23 @@
+{
+  "name": "access",
+  "description": "Map an organization's members, teams and roles onto GitHub, Jenkins (role-strategy), Sentry and Dokploy: who has what, drift per service, grant, revoke, offboard and sync — dry run by default, the first sync of a service only imports it, the last administrator is never removed",
+  "author": "actionplatform",
+  "verified": false,
+  "repo": "https://github.com/actionplatform/apx-access",
+  "pypi": "apx-access",
+  "latest": "0.1.1",
+  "min_core": "0.32",
+  "needs": [
+    "net: the Action Platform the CLI is logged in to (members, teams, the mapping kept as the organization's plugin options)",
+    "net: api.github.com (or AP_ACCESS_GITHUB_URL), the Jenkins url, sentry.io (or AP_ACCESS_SENTRY_URL), the Dokploy url — only the services configured",
+    "env: AP_ACCESS_ORGANIZATION; AP_ACCESS_GITHUB_ORG, AP_ACCESS_GITHUB_TOKEN; AP_ACCESS_JENKINS_URL, AP_ACCESS_JENKINS_USER, AP_ACCESS_JENKINS_TOKEN; AP_ACCESS_SENTRY_ORG, AP_ACCESS_SENTRY_TOKEN; AP_ACCESS_DOKPLOY_URL, AP_ACCESS_DOKPLOY_API_KEY (or the same keys in the plugin's options)",
+    "jenkins: the role-strategy plugin, selected as the authorization strategy"
+  ],
+  "tags": [
+    "access",
+    "github",
+    "jenkins",
+    "sentry",
+    "dokploy"
+  ]
+}
