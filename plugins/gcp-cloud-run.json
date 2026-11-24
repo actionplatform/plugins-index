@@ -1,0 +1,21 @@
+{
+  "name": "gcp-cloud-run",
+  "description": "Deploy to Google Cloud Run, keyless: the platform's OIDC token is exchanged through Workload Identity Federation for the deploy service account — a connect script trusting the platform for one organization; one service per scope; the CI pushes the image to Artifact Registry with one overlay for every language on the images-base build and runtime images; readiness checks (token exchange, roles with the gcloud fix, image published, service state); traffic split, rollback, verify, diagnose",
+  "author": "actionplatform",
+  "verified": false,
+  "repo": "https://github.com/actionplatform/apx-gcp-cloud-run",
+  "pypi": "apx-gcp-cloud-run",
+  "latest": "0.1.0",
+  "min_core": "0.33",
+  "needs": [
+    "env: AP_GCP_CLOUD_RUN_PROJECT_ID, AP_GCP_CLOUD_RUN_REGION, AP_GCP_CLOUD_RUN_WORKLOAD_IDENTITY_PROVIDER, AP_GCP_CLOUD_RUN_SERVICE_ACCOUNT (the plugin's options on the platform), AP_APP",
+    "net: sts.googleapis.com, iamcredentials.googleapis.com, run.googleapis.com, artifactregistry.googleapis.com, cloudresourcemanager.googleapis.com, iam.googleapis.com; the service's *.run.app url for the health check",
+    "tool: gcloud, only for `action-platform gcp-cloud-run connect`"
+  ],
+  "tags": [
+    "cloud",
+    "docker",
+    "gcp",
+    "cloud-run"
+  ]
+}
