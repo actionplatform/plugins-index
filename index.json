@@ -58,16 +58,17 @@
     },
     {
       "name": "github",
-      "description": "Access to a GitHub organization (members, teams, repository permissions) and read-only checks of branch protection and repository settings",
+      "description": "Access to a GitHub organization (members, teams, repository permissions) through the platform's GitHub connection, no personal token; read-only checks of branch protection and repository settings",
       "author": "actionplatform",
       "verified": false,
       "repo": "https://github.com/actionplatform/apx-github",
       "pypi": "apx-github",
-      "latest": "0.1.0",
+      "latest": "0.2.0",
       "min_core": "0.33",
       "needs": [
         "net: api.github.com (or the api_url option on GitHub Enterprise Server)",
-        "env: AP_GITHUB_ORG, AP_GITHUB_TOKEN, AP_GITHUB_API_URL (or the same keys in the plugin's options)"
+        "env: AP_GITHUB_ORG, AP_GITHUB_TOKEN, AP_GITHUB_API_URL (or the same keys in the plugin's options)",
+        "connection: the organization's GitHub connection on a hosted platform (core 0.34)"
       ],
       "tags": [
         "access",
@@ -97,16 +98,17 @@
     },
     {
       "name": "sentry",
-      "description": "Manage who belongs to a Sentry organization and its teams; read a release's new issues and the errors after a deploy",
+      "description": "Manage who belongs to a Sentry organization and its teams through Connect Sentry, no pasted token; read a release's new issues and the errors after a deploy",
       "author": "actionplatform",
       "verified": false,
       "repo": "https://github.com/actionplatform/apx-sentry",
       "pypi": "apx-sentry",
-      "latest": "0.1.0",
+      "latest": "0.2.0",
       "min_core": "0.33",
       "needs": [
         "env: AP_SENTRY_ORG, AP_SENTRY_TOKEN, AP_SENTRY_URL on a machine (the plugin's options on the platform)",
-        "net: sentry.io, or the self-hosted Sentry's url"
+        "net: sentry.io, or the self-hosted Sentry's url",
+        "connection: the organization's Sentry connection on a hosted platform (core 0.34)"
       ],
       "tags": [
         "access",
