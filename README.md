@@ -21,7 +21,7 @@ Open a pull request with `plugins/<slug>.json`:
 }
 ```
 
-- `pypi` must start with `apx-` (Action Platform extension); the slug must not collide with a core tool or a reserved word (`core platform official admin system test internal`).
+- `pypi` must start with `apx-` (Action Platform extension); the slug must not collide with a core tool or a reserved word (`core platform official admin system test internal github`).
 - `needs` lists every host the plugin talks to and every environment variable it reads; the CLI shows it before installing.
 - `verified` is set by a reviewer after reading the code: no side effects at import, no monkey-patching of `action_platform.*`, `needs` complete. Leave it `false` in the pull request.
 - A new version is a pull request bumping `latest`.
