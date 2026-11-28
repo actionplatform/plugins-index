@@ -1,12 +1,12 @@
 {
   "name": "jenkins",
-  "description": "Jenkins: access through Role-based Authorization Strategy, and read-only tools for jobs, builds and the queue",
+  "description": "Jenkins: the CI runner for deploys and Run CI, access through Role-based Authorization Strategy, and read-only tools for jobs, builds and the queue",
   "author": "actionplatform",
   "verified": false,
   "repo": "https://github.com/actionplatform/apx-jenkins",
   "pypi": "apx-jenkins",
-  "latest": "0.1.0",
-  "min_core": "0.33",
+  "latest": "0.2.0",
+  "min_core": "0.38",
   "needs": [
     "net: the host of the url option",
     "env: AP_JENKINS_URL, AP_JENKINS_USER, AP_JENKINS_TOKEN (tools on a machine; the plugin's options are the fallback)",
