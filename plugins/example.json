@@ -5,8 +5,8 @@
   "verified": true,
   "repo": "https://github.com/actionplatform/apx-example",
   "pypi": "apx-example",
-  "latest": "0.2.0",
-  "min_core": "0.26",
+  "latest": "0.3.0",
+  "min_core": "0.32",
   "needs": [
     "nothing outside this machine"
   ],

@@ -24,7 +24,7 @@ Open a pull request with `plugins/<slug>.json`:
 - `pypi` must start with `apx-` (Action Platform extension); the slug must not collide with a core tool or a reserved word (`core platform official admin system test internal github`).
 - `needs` lists every host the plugin talks to and every environment variable it reads; the CLI shows it before installing.
 - `verified` is set by a reviewer after reading the code: no side effects at import, no monkey-patching of `action_platform.*`, `needs` complete. Leave it `false` in the pull request.
-- A new version is a pull request bumping `latest`.
+- A new version is a pull request bumping `latest`; a nightly check (`scripts/check_drift.py`) fails when an entry's `latest` differs from its repository's newest GitHub release.
 - Run `python scripts/build_index.py` after any change: `index.json` at the root aggregates every plugin and is what the hosted platform's marketplace reads; CI refuses a stale one.
 
 Rules for plugin authors: [writing a plugin](https://github.com/actionplatform/action-platform/blob/master/docs/contribute_plugins.md).
